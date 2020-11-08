@@ -1,31 +1,63 @@
-//question 1
-var firstVar
-
-//question 2
-var firstName =  "Bitten"
-
-//question 3
-var number1 = 15
-
-//question 4
-var division = 20/5
-
-//question 5
-var animal = "frog"
-console.log(animal === "frog")
-
-//question 6
-var orderHasShipped = "true";
-
-//question 7
-if(orderHasShipped === "true") {
-    console.log("true")
-}
-else {
-    console.log("false")
+//Question 1
+const cat = {
+    complain: function () {
+        console.log("Meow");
+    }
 }
 
-//question 8
-for(var count = 0; count <= 9; count++) {
-    console.log(count);
+cat.complain();
+
+//Question 2
+const heading = document.querySelector("h3")
+
+heading.innerHTML = "Updated heading";
+
+
+//Question 3
+heading.style.fontSize = "2em";
+
+//Question 4
+heading.className = "subheading";
+
+//Question 5
+const paragraphs = document.querySelectorAll("p");
+
+for (let i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.color = "red";
+}
+
+//Question 6
+const resultsContainer = document.querySelector(".results");
+
+resultsContainer.innerHTML = "<p>New paragraph</p>";
+
+resultsContainer.style.backgroundColor = "yellow";
+
+//Question 7
+const cats = [
+    {
+        name: "Blob",
+        age: 10
+    },
+    {
+        name: "Harold",
+    },
+    {
+        name: "Blurt",
+        age: 21
+    }
+];
+
+function nameList(list) {
+    for (let i = 0; i < cats.length; i++)
+        console.log(name[i]);
+}
+
+nameList(cats);
+
+//Question 8
+function createCats(cats) {
+    for (let i = 0; i < cats.lentgh; i++) {
+        console.log(i);
+    }
 }
